@@ -3,129 +3,122 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Name Is Salman</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-		href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css">
+		<title>Salman Al Majali</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="short-class.css">
 	</head>
 	<body>
-		<main class="container" id="main">
-			<div class="card">
-				<img src="./assets/foto.png" class="card-img" alt="Foto" />
-					<div class="card-content p-2">
-						<table>
-							<tbody>
-							<tr class="text-left">
-								<th class="p-2">NIM</th>
-								<td class="p-2">: 362241010</td>
-							</tr>
-							<tr class="text-left">
-								<th class="p-2">Nama</th>
-								<td class="p-2">: Salman Al Majali</td>
-							</tr>
-							<tr class="text-left">
-								<th class="p-2">Alamat</th>
-								<td class="p-2">: Jl. E.Andjali Kav. 16 Cisaranten Endah</td>
-							</tr>
-							<tr class="text-left">
-								<th class="p-2">Email</th>
-								<td class="p-2">: undermod007@gmail.com</td>
-							</tr>
-							<tr class="text-left">
-								<th class="p-2">Website</th>
-									<td class="p-2"> : <a href="https://portfolio-zeta-me.vercel.app/" class="card-link" target="_blank">portfolio-zeta-me.vercel.app</a>
-								</td>
-							</tr>
-							</tbody>
-						</table>
-						<div class="media-platform p-2">
-							<div class="icon">
-							<a href="https://www.instagram.com/sxlmxn.almajali/" target="_blank">
-								<img src="./assets/instagram.png" alt="Instagram" />
-							</a>
-						</div>
-						<div class="icon">
-							<a href="https://github.com/SalmanAlmajali" target="_blank">	
-								<img src="./assets/github.png" alt="Github" />
-							</a>
-						</div>
-						<div class="icon">
-							<a href="https://gitlab.com/undermod007" target="_blank">
-								<img src="./assets/gitlab.png" alt="Gitlab" />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<div class="container" id="riwayat">
-			<div class="card">
-				<div class="card-content">
-					<div id="pendidikan">
-						<h3>Riwayat Pendidikan</h3>
-						<ul>
-							<li>MI Al-Hidayah (2009 - 2013)</li>
-							<li>SDN Buluh II (2013 - 2014)</li>
-							<li>SMP Darul Fatwa (2014 - 2015)</li>
-							<li>MTS Al-Azhar (2015 - 2018)</li>
-							<li>MA Al-Azhar (2018 - 2019)</li>
-							<li>SMK IT Baitul Aziz (2019 - 2022)</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-content">
-					<div id="pekerjaan">
-						<h3>Riwayat Pekerjaan</h3>
-						<ol>
-							<li>PT. Rajakon Teknik (2021 - Sekarang)</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-		</div>
 		<nav class="nav">
-			<div onclick="javascript:scrollOnClick('main')">Main</div>
-			<div onclick="javascript:scrollOnClick('riwayat')">Riwayat</div>
-			<div id="mode" onclick="javascript:toogleMode()">
-				Light Mode
+			<div class="flex justify-between items-center">
+				<ul>
+					<li>
+						<a class="text-white" href="#home">Home</a>
+					</li>
+					<li>
+						<a class="text-white" href="#about">About</a>
+					</li>
+					<li>
+						<a class="text-white" href="task.html">Task</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="sign-in.html">Sign In</a>
+					</li>
+					<li>
+						<a href="sign-up.html">Sign Up</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
-		<script src="./vanilla-tilt.js"></script>
+		<main>
+			<div id="home" style="background-image: url('./asset/bg.jpg');" class="bg-cover main flex items-center justify-center">
+				<div class="grid grid-cols-2">
+					<section>
+						<img class="photo" src="./asset/foto.png" alt="My Image" />
+					</section>
+					<section class="about-me flex flex-col justify-center gap-x-2">
+						<h1>Salman Al Majali</h1>
+						<p class="leading-2">
+							Welcome to the digital realm where I orchestrate the symphony of code – a place where functionality meets finesse.
+						</p>
+						<a class="btn border-white font-600" href="task.html">Check Out My Work</a>
+					</section>
+				</div>
+			</div>
+			<div id="about">
+				<section class="about">
+					<h1></h1>
+					<div class="flex justify-center items-center">
+<pre>
+	<span class="window-control">
+		<div></div>
+		<div></div>
+		<div></div>
+	</span>
+	<span class="code-title">about-me.js</span>
+	<span class="code">1</span>	<span class="class code">class</span> <span class="variable code">Salman Al Majali</span> <span class="code">{</span>
+	<span class="code">2</span>
+	<span class="code">3</span>		<span class="variable code">constructor</span><span class="code">() {</span>
+	<span class="code">4</span>			<span class="class code">this</span><span class="code">.</span><span class="attr code">nim</span> <span class="code">=</span> <span class="integer code">362241010</span>
+	<span class="code">5</span>			<span class="class code">this</span><span class="code">.</span><span class="attr code">name</span> <span class="code">=</span> <span class="string code">'Salman Al Majali'</span>
+	<span class="code">6</span>			<span class="class code">this</span><span class="code">.</span><span class="attr code">email</span> <span class="code">=</span> <span class="string code">'undermod007@gmail.com'</span>
+	<span class="code">7</span>		<span class="code">}</span>
+	<span class="code">8</span>
+	<span class="code">9</span>		<span class="variable code">workExperience</span><span class="code">() {</span>
+	<span class="code">10</span>			<span class="class code">return</span> <span class="code">[</span>
+	<span class="code">11</span>				<span class="code">{</span> <span class="attr code">'2021-now'</span>: <span class="string code">'Full-stack Developer at PT. Rajakon Teknik'</span> <span class="code">}</span>
+	<span class="code">12</span>			<span class="code">]</span>			
+	<span class="code">13</span>		<span class="code">}</span>
+	<span class="code">14</span>
+	<span class="code">15</span>		<span class="variable code">education</span><span class="code">() {</span>
+	<span class="code">16</span>			<span class="class code">return</span> <span class="code">[</span>
+	<span class="code">17</span>				<span class="code">{</span> <span class="attr code">'2009-2013'</span><span class="code">:</span> <span class="string code">'MI Al-Hidayah'</span> <span class="code">},</span>
+	<span class="code">18</span>				<span class="code">{</span> <span class="attr code">'2013-2014'</span><span class="code">:</span> <span class="string code">'SDN Buluh II'</span> <span class="code">},</span>
+	<span class="code">19</span>				<span class="code">{</span> <span class="attr code">'2014-2015'</span><span class="code">:</span> <span class="string code">'SMP Darul Fatwa'</span> <span class="code">},</span>
+	<span class="code">20</span>				<span class="code">{</span> <span class="attr code">'2015-2018'</span><span class="code">:</span> <span class="string code">'MTS Al-Azhar'</span> <span class="code">},</span>
+	<span class="code">21</span>				<span class="code">{</span> <span class="attr code">'2018-2019'</span><span class="code">:</span> <span class="string code">'MA Al-Azhar'</span> <span class="code">},</span>
+	<span class="code">22</span>				<span class="code">{</span> <span class="attr code">'2019-2021'</span><span class="code">:</span> <span class="string code">'SMK IT Baitul Aziz'</span> <span class="code">},</span>
+	<span class="code">23</span>				<span class="code">{</span> <span class="attr code">'2022-now'</span><span class="code">:</span> <span class="string code">'STMIK Indonesia Mandiri - Bachelor of Information Technology (IT)'</span> <span class="code">},</span>
+	<span class="code">24</span>			<span class="code">]</span>
+	<span class="code">25</span>		<span class="code">}</span>
+	<span class="code">26</span>
+	<span class="code">27</span>		<span class="variable code">skills</span><span class="code">() {</span>
+	<span class="code">28</span>			<span class="class code">return</span> <span class="code">[</span>
+	<span class="code">29</span>				<span class="string code">'HTML/CSS/JS'</span>, <span class="string code">'Vue/React JS'</span>, <span class="string code">'Bootstrap/Tailwind'</span>, <span class="string code">'Node.js'</span>, <span class="string code">'PHP'</span>,
+	<span class="code">30</span>				<span class="string code">'Laravel/Code Igniter'</span>, <span class="string code">'Next JS'</span>, <span class="string code">'React Native/Flutter'</span>, <span class="string code">'MySQL'</span>, <span class="string code">'GIT'</span>
+	<span class="code">31</span>			<span class="code">]</span>
+	<span class="code">32</span>		<span class="code">}</span>
+	<span class="code">33</span>	<span class="code">}</span>
+	<span class="code">34</span>		<span class="variable code">links</span><span class="code">() {</span>
+	<span class="code">35</span>			<span class="class code">return</span> <span class="code">[</span>
+	<span class="code">36</span>				<span class="code">{</span> <span class="attr code">'github'</span><span class="code">:</span> <a href="https://github.com/SalmanAlmajali" class="string code" target="_blank">https://github.com/SalmanAlmajali</a> <span class="code">},</span>
+	<span class="code">37</span>				<span class="code">{</span> <span class="attr code">'gitlab'</span><span class="code">:</span> <a href="https://gitlab.com/undermod007" class="string code" target="_blank">https://gitlab.com/undermod007</a> <span class="code">},</span>
+	<span class="code">38</span>			<span class="code">]</span>
+	<span class="code">39</span>		<span class="code">}</span>
+</pre>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<p>&copy; <span id="tahun"></span> Copyright : Salman Al Majali</p>
+		</footer>
+
 		<script>
-			function scrollOnClick(target) {
-				document.getElementById(target).scrollIntoView()
-			}
-
-			var isTrue = false
-
-			function toogleMode() {
-				var element = document.body;
-				element.classList.toggle("light-mode");
-
-				isTrue = !isTrue
-				isToogle(isTrue)
-			}
-
-			function isToogle(status) {
-				if (status) {
-					document.getElementById('mode').innerHTML = "Dark Mode"
+			var nav = document.getElementsByClassName('nav')
+			addEventListener('scroll', function() {
+				// console.log(document.documentElement.scrollTop > 50);
+				if (document.documentElement.scrollTop > 50) {
+					nav[0].classList.add('nav-backdrop')
 				} else {
-					document.getElementById('mode').innerHTML = "Light Mode"
+					nav[0].classList.remove('nav-backdrop')
 				}
-			}
+			})
 
-			VanillaTilt.init(document.querySelector(".card"), {
-				max: 5,
-				speed: 200,
-				glare: true,
-				"max-glare": 1,
-			});
+			var date = new Date()
+			var footerTahun = document.getElementById('tahun')
+			footerTahun.innerHTML = date.getFullYear()
 		</script>
 	</body>
 </html>

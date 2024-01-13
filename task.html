@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="short-class.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="flex justify-between items-center">
+            <ul>
+                <li>
+                    <a class="text-white" href="index.html#home">Home</a>
+                </li>
+                <li>
+                    <a class="text-white" href="index.html#about">About</a>
+                </li>
+                <li>
+                    <a class="text-white" href="task.html">Task</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="sign-in.html">Sign In</a>
+                </li>
+                <li>
+                    <a href="sign-up.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div id="schedule" style="background-image: url('./asset/bg.jpg');" class="bg-cover main flex items-center justify-center">
+            <div class="table-card">
+                <h3>Current Schedule</h3>
+                <table id="table" class="mt-4">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Kode</th>
+                            <th>Mata Kuliah</th>
+                            <th>SKS</th>
+                            <th>Dosen Pengampu</th>
+                            <th>Grup</th>
+                            <th>Ruangan</th>
+                            <th>Hari</th>
+                            <th>Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="task" class="task">
+            <div class="task-grid">
+                <a href="./tugas/modul-5.html" class="task-card">
+                    <img src="https://picsum.photos/300/200" alt="Modul 5" />
+                    <h4>Tugas Modul 5</h4>
+                    <p>The Mockup</p>
+                </a>
+                <a href="./tugas/modul-6.html" class="task-card">
+                    <img src="https://picsum.photos/300/200" alt="Modul 6" />
+                    <h4>Tugas Modul 6</h4>
+                    <p>The CSS</p>
+                </a>
+                <a href="./tugas/modul-8.html" class="task-card">
+                    <img src="https://picsum.photos/300/200" alt="Modul 8" />
+                    <h4>Tugas Modul 8</h4>
+                    <p>The Dropdown CSS</p>
+                </a>
+                <a href="./tugas/modul-9.html" class="task-card">
+                    <img src="https://picsum.photos/300/200" alt="Modul 9" />
+                    <h4>Tugas Modul 9</h4>
+                    <p>The Javascript</p>
+                </a>
+                <a href="./tugas/modul-10.html" class="task-card">
+                    <img src="https://picsum.photos/300/200" alt="Modul 10" />
+                    <h4>Tugas Modul 10</h4>
+                    <p>The Javascript Condition and Loop</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="tahun"></span> Copyright : Salman Al Majali</p>
+    </footer>
+
+    <script>
+        var nav = document.getElementsByClassName('nav')
+        addEventListener('scroll', function() {
+            // console.log(document.documentElement.scrollTop > 50);
+            if (document.documentElement.scrollTop > 50) {
+                nav[0].classList.add('nav-backdrop')
+            } else {
+                nav[0].classList.remove('nav-backdrop')
+            }
+        })
+
+        var date = new Date()
+        var footerTahun = document.getElementById('tahun')
+        footerTahun.innerHTML = date.getFullYear()
+    </script>
+
+    <script>
+        var jadwal = [
+            {
+                kode: 'TKB3361',
+                matkul: 'KOMPUTASI NUMERIK',
+                sks: 3,
+                dosen: 'HARYOSO WICAKSONO, S.SI., M.M., M.KOM.',
+                grup: 'A',
+                ruang: 'LB',
+                hari: 'Senin',
+                waktu: '17:00 - 19:30'
+            },
+            {
+                kode: 'TKB3364',
+                matkul: 'PEMOGRAMAN JARINGAN',
+                sks: 3,
+                dosen: 'Patah Herwanto, S.T., M.Kom.',
+                grup: 'A',
+                ruang: 'G',
+                hari: 'Senin',
+                waktu: '19:30 - 22:00'
+            },
+            {
+                kode: 'TKB3262',
+                matkul: 'SISTEM MULTIMEDIA',
+                sks: 2,
+                dosen: 'Moch. Ali Ramdhani, S.T., M.Kom.',
+                grup: 'A',
+                ruang: 'H',
+                hari: 'Selasa',
+                waktu: '17:00 - 19:30'
+            },
+            {
+                kode: 'TKB3261',
+                matkul: 'SISTEM OPERASI',
+                sks: 2,
+                dosen: 'Dr. Chairuddin, M.M., M.T.',
+                grup: 'A',
+                ruang: 'LB',
+                hari: 'Selasa',
+                waktu: '19:30 - 21:10'
+            },
+            {
+                kode: 'TPB3263',
+                matkul: 'ETIKA DAN HUKUM SIBER',
+                sks: 2,
+                dosen: 'YUDHI W. ARTHANA R., S.T., M.KOM.',
+                grup: 'A',
+                ruang: 'E',
+                hari: 'Rabu',
+                waktu: '19:30 - 21:10'
+            },
+            {
+                kode: 'TKB3362',
+                matkul: 'DESAIN WEB',
+                sks: 3,
+                dosen: 'Chalifa Chazar, S.T., M.T.',
+                grup: 'A',
+                ruang: 'H',
+                hari: 'Kamis',
+                waktu: '17:00 - 19:30'
+            },
+            {
+                kode: 'TKB3363',
+                matkul: 'SISTEM MANAJEMEN BASIS DATA',
+                sks: 3,
+                dosen: 'Hendra Gunawan, S.T., M.Kom.',
+                grup: 'A',
+                ruang: 'F',
+                hari: 'Kamis',
+                waktu: '19:30 - 22:00'
+            },
+            {
+                kode: 'TKK3361',
+                matkul: 'MATEMATIKA INFORMATIKA',
+                sks: 3,
+                dosen: 'Sony Susanto, S.Kom., M.T.',
+                grup: 'A',
+                ruang: 'D',
+                hari: 'Jumat',
+                waktu: '17:00 - 19:30'
+            },
+        ]
+
+        var attr = [
+            'i',
+            'kode',
+            'matkul',
+            'sks',
+            'dosen',
+            'grup',
+            'ruang',
+            'hari',
+            'waktu',
+        ]
+
+        var table = document.getElementById("table"), tr, td;
+
+        jadwal.forEach((item, i) => {
+            tr = document.createElement('tr')
+
+            for (let index = 0; index < attr.length; index++) {
+                td = document.createElement('td')
+                tr.appendChild(td)
+                td.innerHTML = index == 0 ? i + 1 : item[attr[index]]
+            }
+
+            table.tBodies[0].appendChild(tr)
+        });
+    </script>
+</body>
+</html>

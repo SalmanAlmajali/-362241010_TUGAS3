@@ -1,0 +1,135 @@
+/* Sengaja dibuat satuan biar gampang */
+
+/* Flex Things */
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.gap-x-2 {
+    row-gap: 2rem;
+}
+
+.gap-y-2 {
+    column-gap: 2rem;
+}
+
+/* Background Things */
+
+.bg-cover {
+    background-size: cover;
+}
+
+/* Color Things */
+
+.text-white {
+    color: white;
+}
+
+/* Grid Things */
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Border thing */
+
+.border-white {
+    border: 1px solid white;
+}
+
+.border-r {
+    border-right: 2px solid ;
+}
+
+.border-l {
+    border-left: 2px solid ;
+}
+
+/* Font Things */
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+/* Effect Things */
+
+.mix-blend-difference {
+    mix-blend-mode: difference;
+}
+
+/* Text Things */
+
+.leading-1 {
+    line-height: 1rem;
+}
+
+.leading-2 {
+    line-height: 2rem;
+}
+
+.leading-1 {
+    line-height: 1rem;
+}
+
+.leading-1 {
+    line-height: 1rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Spacing Things */
+
+.mb-2 {
+    margin-bottom: .5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}

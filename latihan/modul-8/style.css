@@ -1,0 +1,108 @@
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 5px 10px 0px rgba(1, 37, 104, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #012568;
+    color: #fff;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #012568;
+}
+
+.dropdown-2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.dropdown-item {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 5px 10px 0px rgba(1, 37, 104, 0.2);
+    z-index: 1;
+    transition: .3s all;
+}
+
+.dropdown-item a {
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-2:hover .dropdown-item {
+    display: block;
+}
+
+.dropdown-2:hover .dropdown-btn {
+    background-color: cyan;
+}
+
+.dropdown-2:hover .dropdown-item a:hover {
+    background-color: cyan;
+}
+
+.sub-dropdown-item {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 5px 10px 0px rgba(1, 37, 104, 0.2);
+    z-index: 1;
+    transition: .3s all;
+}
+
+.dropdown-3:hover .sub-dropdown-item {
+    display: block;
+    position: relative;
+}
+
+.dropdown-3:hover .dropdown-trigger {
+    background-color: #012568;
+    color: white;
+}

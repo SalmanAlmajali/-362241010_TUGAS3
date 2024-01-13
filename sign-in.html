@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="short-class.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="flex justify-between items-center">
+            <ul>
+                <li>
+                    <a class="text-white" href="index.html#home">Home</a>
+                </li>
+                <li>
+                    <a class="text-white" href="index.html#about">About</a>
+                </li>
+                <li>
+                    <a class="text-white" href="task.html">Task</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="sign-in.html">Sign In</a>
+                </li>
+                <li>
+                    <a href="sign-up.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div style="background-image: url('./asset/bg.jpg');" class="bg-cover main flex items-center justify-center">
+            <div class="form-card">
+                <h3 class="form-title">Sign In</h3>
+                <form action="">
+                    <div class="mt-4">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" id="email" class="input" required>
+                    </div>
+                    <div class="mt-4">
+                        <label for="password" class="label">Password</label>
+                        <input type="password" name="password" id="password" class="input" required>
+                    </div>
+                    <div class="mt-4 flex justify-between items-end">
+                        <a href="sign-up.html" class="link">Create account here</a>
+                        <div>
+                            <button type="submit" class="btn border-white font-600 btn-primary">Sign In</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="tahun"></span> Copyright : Salman Al Majali</p>
+    </footer>
+
+    <script>
+        var nav = document.getElementsByClassName('nav')
+        addEventListener('scroll', function() {
+            // console.log(document.documentElement.scrollTop > 50);
+            if (document.documentElement.scrollTop > 50) {
+                nav[0].classList.add('nav-backdrop')
+            } else {
+                nav[0].classList.remove('nav-backdrop')
+            }
+        })
+
+        var date = new Date()
+        var footerTahun = document.getElementById('tahun')
+        footerTahun.innerHTML = date.getFullYear()
+    </script>
+</body>
+</html>
